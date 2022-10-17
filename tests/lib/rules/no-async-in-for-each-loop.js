@@ -1,6 +1,6 @@
 /**
  * @fileoverview Disallow asynchronous behavior inside forEach loops
- * @author Tomás
+ * @author Tomás Cassas
  */
 'use strict';
 

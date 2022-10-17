@@ -1,16 +1,16 @@
 # Disallow async in forEach loops (no-async-in-for-each-loop)
 
-Please describe the origin of the rule here.
+Using asynchronous code inside forEach loops can lead to unnexpected behaviours.
 
 ## Rule Details
 
-This rule aims to...
+This rule aims to prevent the usage of asynchronous code in forEach loops
 
 Examples of **incorrect** code for this rule:
 
 ```js
 
-// fill me in
+['gunma'].forEach(async (prefecutre) => { console.log(prefecture) })
 
 ```
 
@@ -18,18 +18,10 @@ Examples of **correct** code for this rule:
 
 ```js
 
-// fill me in
+['yokohama'].forEach((prefecutre) => { console.log(prefecutre) })
 
 ```
 
-### Options
-
-If there are any options, describe them here. Otherwise, delete this section.
-
-## When Not To Use It
-
-Give a short description of when it would be appropriate to turn off this rule.
-
 ## Further Reading
 
-If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.
+To see a more detailed reason to why I created this rule, [see](https://gist.github.com/joeytwiddle/37d2085425c049629b80956d3c618971).
